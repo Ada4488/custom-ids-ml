@@ -1,0 +1,13 @@
+# IDS Configuration
+interface: "en0"  # Change this to your network interface
+log_level: "INFO"
+api_port: 5000
+
+# Detection settings
+ml_model:
+  contamination: 0.05
+  n_estimators: 100
+  max_samples: "auto"
+
+# Alert settings
+alert_log: "logs/alerts.json"
